@@ -1,0 +1,135 @@
+html body {
+  background-color: rgb(23, 186, 205);
+  box-sizing: border-box;
+  
+}
+
+
+#entire-calculator {
+  display: flex;
+  flex-direction: column;
+}
+/* The head of the calculator */
+#calculator-head-container {
+  background-color: rgb(105, 105, 105);
+  width: 500px; height: 150px;
+  margin: 0 auto; margin-top: 100px;
+  border: 1px solid black;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+#calculator-screen-container{
+  
+}
+/* target the input (aka screen) */
+#calculator-screen-container input.screen {
+  width: 450px; height: 110px;
+  margin: 15px auto;
+  font-size: 100px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* The body */
+#calculator-body-container {
+  background-color: rgb(105, 105, 105);
+  min-width: 500px; min-height: 570px;
+  max-width: 500px; max-height: 570px;
+  margin: 0 auto; margin-bottom: 100px;
+  border: 1px solid black;
+  border-radius: 0 0 5px 5px;
+  display: flex; 
+  flex-wrap: wrap; justify-content: space-around;  
+}
+
+#calculator-body-container > * {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#numbers-container {
+  min-width: 350px; min-height: 450px;
+  max-width: 350px; max-height: 450px;
+  flex: 1 0 auto;
+  display: flex;
+  flex: 1 0 auto;
+  flex-wrap: wrap;
+  justify-content: center; align-content: center;
+}
+
+
+#operators-container {
+  flex: 1 0 auto;
+  display: flex;
+  flex: 1 0 auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center; align-content: center;
+  min-width: 146px; min-height: 450px;
+  max-width: 146px; max-height: 450px;
+}
+
+
+#equal-clear-container {
+  flex: 1 0 auto;
+  display: flex;
+  flex: 1 0 auto;
+  flex-wrap: wrap;
+  justify-content: center; align-content: center;
+  min-height: 100px;
+  max-height: 100px;
+  margin-bottom: 10px;
+}
+
+
+.number-button {
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.operator-button{
+  height: 100px; width: 70px;
+  margin: 10px 0;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.equal-clear-decimalpoint-button{
+  /* width:auto; height: auto; */
+  /* flex: 1 0 auto; */
+  padding: 0 20px;
+  margin: 0 10px;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 0 3px 0 black;
+}
+
+/* buttons 3 6 9 0 have shadowing */
+#numbers-container div:nth-child(3), #numbers-container div:nth-child(6), #numbers-container div:nth-child(9), #numbers-container div:nth-child(10){
+  box-shadow: 2px 0px 3px 0 black;
+}
+
+.number-button-content {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 4em;
+  margin: 20px;
+}
+
+.operator-button-content{
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3.5em;
+  margin: 10px;
+}
+
+.equal-clear-decimalpoint-button-content{
+  text-align: center; 
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3em;
+  margin: 20px;
+}
